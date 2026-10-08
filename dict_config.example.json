@@ -1,0 +1,20 @@
+{
+  "_说明": [
+    "本文件是「查单词」的可选功能配置。改完保存、重启软件即生效，无需重新安装。",
+    "所有项都可留空。留空 = 该功能走默认兜底，不会报错。",
+    "格式要求：值必须是字符串，两侧不要加多余空格。"
+  ],
+  "_edge_accent_说明": "Edge 神经语音的口音代号。平时不用手改 —— 在软件底部发音栏右侧的下拉框里直接选，会自动写回这里。可选值见「使用说明.txt」或软件里的下拉列表，例如 en-US-AvaNeural（美音女声）、en-GB-LibbyNeural（英音女声）、en-AU-NatashaNeural（澳音女声）。留空 = 默认美音 Ava。",
+  "edge_accent": "",
+  "_youdao_说明": "有道翻译开放平台 appKey / appSecret（两者必须同时填）。到 https://ai.youdao.com/ 注册创建「文本翻译」应用即可获取，免费额度约每天 500 次。填好后「翻译」按钮支持整句、整段翻译；留空则仅支持单词和常见句的词典式翻译。",
+  "youdao_app_key": "",
+  "youdao_app_secret": "",
+  "_deepseek_说明": "DeepSeek API Key。填好后在 AI 站点下拉框选择「DeepSeek 站内」，就可以直接在软件里提问、追问并保存回答到单词笔记。留空则继续使用网页版 AI。API 通常按用量计费，具体以 DeepSeek 当前政策为准。",
+  "deepseek_api_key": "",
+  "deepseek_model": "deepseek-chat",
+  "deepseek_base_url": "https://api.deepseek.com",
+  "deepseek_timeout": "75",
+  "_proxy_说明": "网络代理。如果本机访问境外站点不通，可填这里，形如 http://127.0.0.1:7890。留空 = 使用系统默认。",
+  "proxy": "",
+  "tip_collapsed": 0
+}

@@ -1,0 +1,13 @@
+# 大文件走 Git LFS
+# 词库与程序本体合计约 530 MB，超过 GitHub 单文件 100 MB 的硬限制，
+# 必须用 LFS 托管，否则 push 会被直接拒绝。
+# 克隆方需要先安装 git-lfs 并执行 `git lfs install`。
+*.exe   filter=lfs diff=lfs merge=lfs -text
+*.db    filter=lfs diff=lfs merge=lfs -text
+*.pkg   filter=lfs diff=lfs merge=lfs -text
+
+# 文本文件统一按 LF 入库
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
