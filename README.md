@@ -51,18 +51,17 @@
 
 ## 🚀 快速开始
 
-### 方式一：下载成品（推荐，无需 Python）
+### 方式一：下载 Release 安装包（最省事，无需 Python、无需 Git LFS）
 
-1. 安装 [Git LFS](https://git-lfs.com/)（若用下面的 clone 方式）
-2. 克隆仓库，或从 **Releases** 页下载打包好的 zip
-3. 解压到任意目录，双击 **`查单词.exe`**
+前往 **[Releases](https://github.com/hexiaodong2778/chinese-english-dictionary/releases/latest)**
+下载 `chaword-v1.2.0-win64.zip`（约 523 MB），解压后双击 **`查单词.exe`** 即可。
 
 > ⚠️ 四个 `.db` 词库文件必须和 `查单词.exe` **放在同一目录**，否则程序无法启动查词。
+> 解压时请保持压缩包内的目录结构。
 
-### 方式二：克隆仓库
+### 方式二：克隆仓库（约 533 MB，需先装 Git LFS）
 
-本仓库的词库与 exe 通过 **Git LFS** 托管（合计约 530 MB），
-克隆前请先安装 git-lfs：
+本仓库的词库与 exe 通过 **Git LFS** 托管，克隆前请先安装 git-lfs：
 
 ```bash
 git lfs install
@@ -70,6 +69,7 @@ git clone https://github.com/hexiaodong2778/chinese-english-dictionary.git
 ```
 
 若未安装 git-lfs，克隆下来的大文件只会是几百字节的**指针文件**，程序无法运行。
+（因此**推荐用方式一**，那条通道不占 Git LFS 的免费流量额度。）
 
 ---
 
